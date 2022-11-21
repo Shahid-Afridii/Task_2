@@ -21,7 +21,7 @@ export const Posts = () => {
   const triggerRef = useRef(null);
   // console.log("state",state)
   const onGrabData = (currentPage) => {
-    // This would be where you'll call your API
+
 
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -44,7 +44,7 @@ export const Posts = () => {
     onGrabData,
     options: { state, dispatch },
   });
-  console.log("new", state);
+  // console.log("new", state);
   return (
     <>
       <h1 style={{ textAlign: "center", fontWeight: "600",fontSize:"22px" }}>NewsFeed</h1>

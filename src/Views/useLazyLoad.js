@@ -31,11 +31,11 @@ const useLazyLoad = ({ triggerRef, onGrabData, options }) => {
   const _handleEntry = async (entry) => {
     const boundingRect = entry.boundingClientRect;
     const intersectionRect = entry.intersectionRect;
-console.log("teast",state.currentPage,!state.loading &&
-entry.isIntersecting &&
-3>=state.currentPage &&
-intersectionRect.bottom - boundingRect.bottom <= INTERSECTION_THRESHOLD)
-console.log("dfdf",state.loading)
+// console.log("teast",state.currentPage,!state.loading &&
+// entry.isIntersecting &&
+// 3>=state.currentPage &&
+// intersectionRect.bottom - boundingRect.bottom <= INTERSECTION_THRESHOLD)
+// console.log("dfdf",state.loading)
     if (
       !state.loading &&
       entry.isIntersecting &&
